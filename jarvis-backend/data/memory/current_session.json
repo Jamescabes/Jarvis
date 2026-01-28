@@ -1,22 +1,32 @@
 [
   {
-    "timestamp": "2026-01-27T18:58:33.010164",
+    "timestamp": "2026-01-29T00:16:02.618229",
     "role": "user",
-    "content": "Hello JARVIS"
+    "content": "hola?"
   },
   {
-    "timestamp": "2026-01-27T18:58:33.014106",
+    "timestamp": "2026-01-29T00:16:02.618234",
     "role": "assistant",
-    "content": "I heard you: Hello JARVIS"
+    "content": "Hola, Sir. J.A.R.V.I.S. a su servicio. ¿En qué puedo ayudarle? ¿Prefiere que sigamos en español o en inglés?"
   },
   {
-    "timestamp": "2026-01-27T18:58:33.920123",
+    "timestamp": "2026-01-29T00:19:13.441113",
     "role": "user",
-    "content": "/echo testing"
+    "content": "eres tu?"
   },
   {
-    "timestamp": "2026-01-27T18:58:33.920123",
+    "timestamp": "2026-01-29T00:19:13.441118",
     "role": "assistant",
-    "content": "Executing command: /echo testing\nResult: testing\n"
+    "content": "Sí, Sir — J.A.R.V.I.S. a su servicio. ¿En qué puedo ayudarle hoy?"
+  },
+  {
+    "timestamp": "2026-01-29T00:19:55.152228",
+    "role": "user",
+    "content": "puedes aadir un evento al calendario?"
+  },
+  {
+    "timestamp": "2026-01-29T00:19:55.152233",
+    "role": "assistant",
+    "content": "Puedo, Sir — con condiciones.\n\nPuedo añadir el evento directamente si tiene su calendario (Google, Outlook, iCloud) conectado y me da permiso. Si no, puedo:\n- Generar un archivo .ics que usted importe,\n- O guiarle paso a paso para añadirlo manualmente.\n\nNecesito estos datos, por favor:\n1. Título del evento.\n2. Fecha y hora de inicio y fin (o duración).\n3. Zona horaria.\n4. Calendario a usar (Google/Outlook/iCloud/otro).\n5. Ubicación (opcional).\n6. Descripción/agenda (opcional).\n7. Recordatorios (ej.: 10 min antes, 1 día antes).\n8. Participantes con emails (si desea enviar invitaciones).\n\nEjemplo rápido para confirmar formato:\n- Título: Reunión Proyecto Atlas\n- Fecha: 3 feb 2026\n- Hora: 10:00–11:00 (CET)\n- Recordatorio: 15 min antes\n¿Desea que proceda así?"
   }
 ]

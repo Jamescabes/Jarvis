@@ -8,20 +8,22 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
 
+import com.jarvis.client.data.model.Message
+
 class ChatRepository @Inject constructor(
     private val client: OkHttpClient
 ) {
     private var webSocket: WebSocket? = null
-    private val _messages = MutableStateFlow<List<String>>(emptyList())
-    val messages: StateFlow<List<String>> = _messages
+    private val _messages = MutableStateFlow<List<Message>>(emptyList())
+    val messages: StateFlow<List<Message>> = _messages
 
     fun connect() {
         val request = Request.Builder().url("ws://10.0.2.2:8000/ws").build()
         val listener = object : WebSocketListener() {
             override fun onMessage(webSocket: WebSocket, text: String) {
-                // Determine if it's user or system message based on parsing (simplified here)
+                // Incoming messages from WebSocket are from Jarvis
                 val current = _messages.value.toMutableList()
-                current.add(text) 
+                current.add(Message(text, isUser = false)) 
                 _messages.value = current
             }
             
@@ -33,6 +35,11 @@ class ChatRepository @Inject constructor(
     }
 
     fun sendMessage(text: String) {
+        // Optimistically add user message
+        val current = _messages.value.toMutableList()
+        current.add(Message(text, isUser = true))
+        _messages.value = current
+        
         webSocket?.send(text)
     }
 }
