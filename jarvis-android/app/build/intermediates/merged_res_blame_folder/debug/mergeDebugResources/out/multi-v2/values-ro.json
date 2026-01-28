@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.jarvis.client.app-mergeDebugResources-56:/values-ro/values-ro.xml",
+            "outputFile": "com.jarvis.client.app-mergeDebugResources-57:/values-ro/values-ro.xml",
             "map": [
                 {
                     "source": "C:\\Users\\javie\\.gradle\\caches\\transforms-4\\b7fc00acc34cab8b969d8ea1920e10af\\transformed\\material3-release\\res\\values-ro\\values-ro.xml",

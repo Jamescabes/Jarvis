@@ -2,6 +2,7 @@ package com.jarvis.client;
 
 import android.os.Bundle;
 import androidx.activity.ComponentActivity;
+import androidx.compose.runtime.Composable;
 import dagger.hilt.android.AndroidEntryPoint;
 
 @dagger.hilt.android.AndroidEntryPoint()

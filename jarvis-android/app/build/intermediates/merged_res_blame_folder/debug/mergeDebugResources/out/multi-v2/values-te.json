@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.jarvis.client.app-mergeDebugResources-56:/values-te/values-te.xml",
+            "outputFile": "com.jarvis.client.app-mergeDebugResources-57:/values-te/values-te.xml",
             "map": [
                 {
                     "source": "C:\\Users\\javie\\.gradle\\caches\\transforms-4\\790f948a257f594201cc371e9b3810e9\\transformed\\ui-release\\res\\values-te\\values-te.xml",

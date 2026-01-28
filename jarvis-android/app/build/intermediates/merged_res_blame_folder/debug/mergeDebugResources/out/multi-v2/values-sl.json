@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.jarvis.client.app-mergeDebugResources-56:/values-sl/values-sl.xml",
+            "outputFile": "com.jarvis.client.app-mergeDebugResources-57:/values-sl/values-sl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\javie\\.gradle\\caches\\transforms-4\\4f38aeaacbed2ca5bd1a7f7dc565ba8f\\transformed\\foundation-release\\res\\values-sl\\values-sl.xml",

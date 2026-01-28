@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.jarvis.client.app-mergeDebugResources-56:/values-ko/values-ko.xml",
+            "outputFile": "com.jarvis.client.app-mergeDebugResources-57:/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\javie\\.gradle\\caches\\transforms-4\\5ffd01eae9af4acc130250da852275a6\\transformed\\core-1.15.0\\res\\values-ko\\values-ko.xml",

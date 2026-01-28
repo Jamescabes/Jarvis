@@ -564,7 +564,7 @@ public final class DaggerJarvisApp_HiltComponents_SingletonC {
     }
 
     @Override
-    public void injectJarvisApp(JarvisApp jarvisApp) {
+    public void injectJarvisApp(JarvisApp arg0) {
     }
 
     @Override
