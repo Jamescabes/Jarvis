@@ -1,0 +1,22 @@
+[
+  {
+    "timestamp": "2026-01-27T18:58:33.010164",
+    "role": "user",
+    "content": "Hello JARVIS"
+  },
+  {
+    "timestamp": "2026-01-27T18:58:33.014106",
+    "role": "assistant",
+    "content": "I heard you: Hello JARVIS"
+  },
+  {
+    "timestamp": "2026-01-27T18:58:33.920123",
+    "role": "user",
+    "content": "/echo testing"
+  },
+  {
+    "timestamp": "2026-01-27T18:58:33.920123",
+    "role": "assistant",
+    "content": "Executing command: /echo testing\nResult: testing\n"
+  }
+]
