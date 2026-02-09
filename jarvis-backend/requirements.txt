@@ -6,3 +6,4 @@ pydantic>=2.0.0
 openai
 anthropic
 python-dotenv
+g4f

@@ -11,17 +11,19 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
-private val DarkColorScheme = darkColorScheme(
-    primary = ArcBlue,
-    onPrimary = DeepNavy,
-    secondary = SoftCyan,
-    onSecondary = DeepNavy,
-    background = DarkGray,
-    onBackground = TextGray,
-    surface = DeepNavy,
-    onSurface = SoftCyan,
-    error = ErrorRed,
-    onError = Color.Black
+val DarkColorScheme = darkColorScheme(
+    primary = JarvisBlue,
+    onPrimary = BlackDeep,
+    secondary = JarvisCyan,
+    onSecondary = BlackDeep,
+    background = BlackDeep,
+    onBackground = WhiteTech,
+    surface = Surface,
+    onSurface = WhiteTech,
+    error = Error,
+    onError = BlackDeep,
+    surfaceVariant = SurfaceElevated,
+    onSurfaceVariant = WhiteTech
 )
 
 @Composable

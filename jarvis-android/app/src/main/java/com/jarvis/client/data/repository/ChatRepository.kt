@@ -9,6 +9,8 @@ import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
 
 import com.jarvis.client.data.model.Message
+import com.jarvis.client.data.model.MessageType
+import com.jarvis.client.data.model.MessageStatus
 
 class ChatRepository @Inject constructor(
     private val client: OkHttpClient
@@ -23,7 +25,14 @@ class ChatRepository @Inject constructor(
             override fun onMessage(webSocket: WebSocket, text: String) {
                 // Incoming messages from WebSocket are from Jarvis
                 val current = _messages.value.toMutableList()
-                current.add(Message(text, isUser = false)) 
+                current.add(
+                    Message(
+                        senderId = "jarvis",
+                        content = text,
+                        type = MessageType.TEXT,
+                        status = MessageStatus.DELIVERED
+                    )
+                ) 
                 _messages.value = current
             }
             
@@ -37,7 +46,14 @@ class ChatRepository @Inject constructor(
     fun sendMessage(text: String) {
         // Optimistically add user message
         val current = _messages.value.toMutableList()
-        current.add(Message(text, isUser = true))
+        current.add(
+            Message(
+                senderId = "user",
+                content = text,
+                type = MessageType.TEXT,
+                status = MessageStatus.SENDING
+            )
+        )
         _messages.value = current
         
         webSocket?.send(text)
