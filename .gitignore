@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Datos locales del backend
+jarvis-backend/data/
+jarvis-backend/har_and_cookies/
+
+# Android / Gradle
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+*.apk
+*.aab
+
+# Sistema
+.DS_Store
+Thumbs.db

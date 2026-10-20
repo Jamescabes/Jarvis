@@ -31,13 +31,34 @@ Si quieres probar el sistema completo ahora mismo, consulta nuestra:
 - **IA**: Soporte para OpenAI (Premium) y Fallback Gratuito mediante relés redundantes.
 - **Versión**: 0.2.0 (Deep Refactor)
 
-## Documentación
+## Stack
 
-Puedes encontrar detalles profundos sobre cada componente en la carpeta `/docs`:
+| Parte | Tecnologías |
+|---|---|
+| App Android | Kotlin, Jetpack Compose, Hilt (inyección de dependencias), arquitectura MVVM (Model-View-ViewModel), WebSockets |
+| Backend | Python, FastAPI, Uvicorn, WebSockets, Pydantic |
+| IA | OpenAI y Anthropic como proveedores principales, g4f como alternativa gratuita |
+
+## Estructura
+
+```
+jarvis-android/        App Android (cliente)
+jarvis-backend/
+  app/core/            Capas Brain, Ear, Voice, Eye y personalidad
+  app/orchestrator/    Servidor FastAPI y endpoint WebSocket /ws
+  app/memory/          Historial de sesión persistente
+  app/actions/         Ejecución de acciones en el sistema
+  scripts/             Pruebas manuales (ejecutar con python -m scripts.<nombre> desde jarvis-backend/)
+docs/                  Arquitectura, producto, seguridad y roadmap
+```
+
+## Documentación
 
 - [Arquitectura del Sistema](docs/02_architecture/ARCHITECTURE.md)
 - [Flujo de Datos](docs/02_architecture/DATA_FLOW.md)
 - [Visión del Proyecto](docs/01_overview/PROJECT_OVERVIEW.md)
+- [Roadmap](docs/07_business/ROADMAP.md)
 
----
-*Para soporte técnico o contribuciones, contactar con el administrador del sistema.*
+## Evolución
+
+La versión siguiente, con agente de PC, memoria vectorial y arquitectura distribuida, está en desarrollo en un repositorio aparte (Jarvis-V2).
